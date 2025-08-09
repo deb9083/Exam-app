@@ -17,10 +17,10 @@ const ExamTopicPrioritizer = () => {
 
   // PWA Install functionality
   useEffect(() => {
-    const handler = (e) => {
-      e.preventDefault();
-      setDeferredPrompt(e);
-      setShowInstallButton(true);
+    const handler = (e: React.MouseEvent) => {
+        e.preventDefault();
+        setDefersoftroot(e);
+        setShowInstallButton(true);
     };
 
     window.addEventListener('beforeinstallprompt', handler);
